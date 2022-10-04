@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Abyssinica+SIL&family=Alex+Brush&family=Roboto:ital,wght@0,400;1,300&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.app-container {
+  /* background-color: aquamarine; */
+}
+
+.menu-page-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(254, 239, 229);
+  padding: 25px 0;
+  backface-visibility: hidden;
+}
+
+.your-food {
+  color: #333;
+  display: block;
+  animation: inFromBottom 2s ease-out;
+  font-family: "Alex Brush", cursive;
+}
+
+.m,
+.e,
+.n,
+.u {
+  font-size: 3rem;
+}
+
+.m {
+  color: rgb(5, 5, 119);
+}
+
+.e {
+  color: fuchsia;
+}
+
+.n {
+  color: darkgreen;
+}
+
+.u {
+  color: chocolate;
+}
+
+.menu-texts {
+  animation: inFromTop 2s ease-out;
+}
+
+.menu-texts:hover {
+  animation: hoverAnime 2s linear;
+}
+
+.menu-underline {
+  width: 50px;
+  height: 6px;
+  background-color: aqua;
+  border-bottom: 3px solid royalblue;
+  display: block;
+}
+
+/* Animations */
+
+@keyframes inFromTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+
+  60% {
+    transform: translateX(20px);
+  }
+
+  80% {
+    transform: translateX(-20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes inFromBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+
+  60% {
+    transform: translateX(-20px);
+  }
+  80% {
+    transform: translateX(20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes hoverAnime {
+  0% {
+  }
+
+  100% {
+    transform: rotate(320deg);
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .menu-page-title {
+    padding: 30px 0;
+  }
+  .your-food {
+    font-size: 5rem;
+    line-height: 1;
+  }
+
+  .m,
+  .e,
+  .n,
+  .u {
+    font-size: 3rem;
+  }
+}

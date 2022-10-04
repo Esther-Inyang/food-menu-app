@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Abyssinica+SIL&family=Alex+Brush&family=Roboto:ital,wght@0,400;1,300&display=swap");
+
+.menu-category-container {
+  padding: 20px;
+  text-align: center;
+}
+
+.menu-category-title {
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 20px;
+  color: #333333;
+  text-transform: lowercase;
+  font-family: "Abyssinica SIL", serif;
+}
+
+.dot-a {
+  color: blue;
+}
+
+.dot-b {
+  color: fuchsia;
+}
+
+.dot-c {
+  color: green;
+}
+
+.category-btn-container {
+  width: 50%;
+  margin: 0 auto;
+  display: grid;
+  background-color: white;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5px;
+  border-radius: 2px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.category-btn {
+  font-weight: 600;
+  padding: 10px;
+  border: none;
+  font-family: "Roboto", sans-serif;
+  transition: all 0.2s linear;
+  cursor: pointer;
+}
+
+.category-btn-a {
+  color: rgb(3, 3, 93);
+  background-color: rgb(247, 204, 174);
+}
+
+.category-btn-b {
+  color: rgb(3, 3, 93);
+  background-color: rgb(178, 253, 178);
+}
+
+.category-btn-c {
+  color: rgb(3, 3, 93);
+  background-color: rgb(253, 139, 253);
+}
+
+.category-btn-d {
+  color: rgb(3, 3, 93);
+  background-color: rgb(159, 159, 254);
+}
+
+.category-btn:hover {
+  background-color: #cecdcd;
+}

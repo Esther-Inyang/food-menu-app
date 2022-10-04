@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Abyssinica+SIL&family=Roboto:ital,wght@0,400;1,300&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 1.9rem;
+  line-height: 0.6;
+  text-transform: capitalize;
+  font-family: "Abyssinica SIL", serif;
+}
+
+p {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  font-weight: 300;
+  color: #807f7f;
+  font-family: "Roboto", sans-serif;
+}
+
+.menu-section {
+  width: 100%;
+  padding: 20px;
+  display: grid;
+  gap: 30px;
+}
+
+.menu-item-container {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.5);
+}
+
+.menu-item {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.food-img-container {
+  width: 100%;
+  height: 250px;
+  outline: 1px solid rgb(159, 159, 254);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.food-img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.menu-details {
+  background-color: white;
+  padding: 20px;
+}
+
+.menu-title-container {
+}
+
+.menu-title {
+}
+
+.menu-price {
+  margin: 20px 0;
+  color: rgb(221, 2, 221);
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-align: right;
+  padding: 10px;
+  border: 1px solid chocolate;
+  border-radius: 3px;
+  width: fit-content;
+  font-family: "Roboto", sans-serif;
+  background-color: rgb(254, 246, 236);
+}
+
+.menu-desc {
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 992px) {
+  h1 {
+    font-size: 2.5rem;
+    line-height: 0.8;
+  }
+  p {
+    font-size: 1.3rem;
+    line-height: 1.5;
+  }
+
+  .menu-section {
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    gap: 40px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .menu-item-container {
+    /* box-shadow: 0 3px 8px rgba(0, 0, 0, 0.5); */
+  }
+
+  .menu-item {
+    width: 100%;
+  }
+
+  .food-img-container {
+    width: 100%;
+    height: 350px;
+  }
+
+  .menu-desc {
+    text-align: right;
+  }
+}
