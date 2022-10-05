@@ -10,17 +10,20 @@ function App() {
 
   return (
     <div className="app-container">
-      <h1 className="menu-page-title">
-        <span className="your-food">Your Food</span>
+      <div className="page-title_container">
+        <h1 className="page-title">
+          <span className="your-food">Your Food</span>
 
-        <span className="menu-texts">
-          <span className="m">M</span>
-          <span className="e">E</span>
-          <span className="n">N</span>
-          <span className="u">U</span>
-        </span>
-        <span className="menu-underline"></span>
-      </h1>
+          <span className="menu-texts_container">
+            <span className="m">M</span>
+            <span className="e">E</span>
+            <span className="n">N</span>
+            <span className="u">U</span>
+          </span>
+
+          <span className="menu-underline"></span>
+        </h1>
+      </div>
 
       <MenuCategories />
       <Menu menuItems={menuItems} />

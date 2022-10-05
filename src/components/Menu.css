@@ -6,21 +6,6 @@
   box-sizing: border-box;
 }
 
-h1 {
-  font-size: 1.9rem;
-  line-height: 0.6;
-  text-transform: capitalize;
-  font-family: "Abyssinica SIL", serif;
-}
-
-p {
-  font-size: 1.5rem;
-  line-height: 1.5;
-  font-weight: 300;
-  color: #807f7f;
-  font-family: "Roboto", sans-serif;
-}
-
 .menu-section {
   width: 100%;
   padding: 20px;
@@ -29,96 +14,202 @@ p {
 }
 
 .menu-item-container {
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
   box-shadow: 0 3px 8px rgba(0, 0, 0, 0.5);
 }
 
-.menu-item {
+.menu-item-container,
+.menu-item,
+.food-img-container,
+.food-img {
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
+}
+
+.menu-item {
+  background-color: white;
 }
 
 .food-img-container {
   width: 100%;
   height: 250px;
   outline: 1px solid rgb(159, 159, 254);
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
 }
 
 .food-img {
   width: 100%;
   height: 100%;
   object-fit: fill;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
 }
 
 .menu-details {
-  background-color: white;
   padding: 20px;
 }
 
 .menu-title-container {
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 .menu-title {
+  font-size: 1.7rem;
+  line-height: 0.2;
+  margin-top: 10px;
+  text-transform: capitalize;
+  font-family: "Abyssinica SIL", serif;
 }
 
 .menu-price {
-  margin: 20px 0;
-  color: rgb(221, 2, 221);
-  font-size: 1.5rem;
+  margin: 25px auto 7px;
+  font-size: 1.3rem;
   font-weight: 400;
-  text-align: right;
-  padding: 10px;
-  border: 1px solid chocolate;
+  padding: 5px 10px;
+  color: rgb(221, 2, 221);
   border-radius: 3px;
   width: fit-content;
   font-family: "Roboto", sans-serif;
   background-color: rgb(254, 246, 236);
 }
 
+.menu-title-underline {
+  width: 60%;
+  margin: 0 auto 10px;
+  border-bottom: 1px solid #dfdbdb;
+}
+
 .menu-desc {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  font-weight: 300;
+  color: #696868;
   text-align: center;
+  font-family: "Roboto", sans-serif;
+}
+
+.buy-btn_container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.buy-btn {
+  font-size: 1.4rem;
+  padding: 5px 10px;
+  border: 0;
+  font-weight: 500;
+  border-radius: 4px;
+  color: rgb(163, 10, 163);
+  transition: all 0.2s linear;
+  font-family: "Abyssinica SIL", serif;
+  border: 1px solid rgb(188, 199, 232);
+  background-color: rgb(235, 239, 250);
+}
+
+.buy-btn:hover {
+  background-color: rgb(245, 214, 245);
 }
 
 @media screen and (min-width: 768px) {
+  .menu-section {
+    padding: 40px;
+    gap: 40px;
+  }
+
+  .food-img-container {
+    height: 450px;
+  }
 }
 
 @media screen and (min-width: 992px) {
-  h1 {
-    font-size: 2.5rem;
-    line-height: 0.8;
-  }
-  p {
-    font-size: 1.3rem;
-    line-height: 1.5;
-  }
-
   .menu-section {
-    width: 90%;
+    gap: 40px;
+    width: 100%;
     margin: 0 auto;
     display: grid;
-    gap: 40px;
+    padding: 20px 40px;
     grid-template-columns: repeat(2, 1fr);
   }
 
   .menu-item-container {
-    /* box-shadow: 0 3px 8px rgba(0, 0, 0, 0.5); */
+    box-shadow: none;
+  }
+
+  .menu-item-container,
+  .menu-item,
+  .food-img-container,
+  .food-img {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 5px;
   }
 
   .menu-item {
     width: 100%;
+    height: 280px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .food-img-container {
+    width: 50%;
+    height: 100%;
+  }
+
+  .food-img {
+    height: 100%;
+  }
+
+  .menu-details {
+    padding: 10px;
+    width: 50%;
+  }
+
+  .menu-title-container {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .menu-title_underline-container {
     width: 100%;
-    height: 350px;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .menu-title-underline {
+    width: 90%;
+    margin: 0;
+  }
+
+  .menu-title {
+    font-size: 1.35rem;
+    line-height: 1.25;
+    margin-top: 0;
+  }
+
+  .menu-price {
+    margin: 0;
+    font-size: 1rem;
+    padding: 5px 10px;
   }
 
   .menu-desc {
     text-align: right;
+    padding: 0;
+    margin-top: 20px;
+    font-size: 0.9rem;
+    line-height: 1.8;
+  }
+
+  .buy-btn_container {
+    width: 100%;
+    display: flex;
+    margin-top: 0;
+    justify-content: flex-end;
+  }
+
+  .buy-btn {
   }
 }

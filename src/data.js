@@ -53,7 +53,7 @@ const menuItemsData = [
     category: "shakes",
     price: 8.99,
     img: "./images/item-7.jpeg",
-    desc: `a beverage made by puréeing ingredients in a blender.[1] A smoothie commonly has a liquid base, such as fruit juice or milk, yogurt, ice cream or cottage cheese. Including fruits, vegetables, non-dairy milk, crushed ice, whey powder or nutritional supplements `,
+    desc: `a beverage made by puréeing ingredients in a blender.A smoothie commonly has a liquid base, such as fruit juice or milk, yogurt, ice cream or cottage cheese. Including fruits, vegetables, non-dairy milk, crushed ice, whey powder or nutritional supplements `,
   },
   {
     id: 8,

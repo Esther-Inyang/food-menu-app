@@ -18,7 +18,13 @@ export default function Menu({ menuItems }) {
                   <h1 className="menu-title">{title}</h1>
                   <div className="menu-price">${price}</div>
                 </div>
+                <div className="menu-title_underline-container">
+                  <div className="menu-title-underline"></div>
+                </div>
                 <p className="menu-desc">{desc}</p>
+                <div className="buy-btn_container">
+                  <button className="buy-btn">buy</button>
+                </div>
               </div>
             </div>
           </article>
