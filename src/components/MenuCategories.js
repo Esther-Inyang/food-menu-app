@@ -1,19 +1,27 @@
 import React from "react";
 import "./MenuCategories.css";
 
-function MenuCategories() {
+function MenuCategories({ categories, filteredMenu }) {
   return (
     <section className="menu-category-container">
       <h1 className="menu-category-title">
-        Select your Menu<span className="dot-a">.</span>
+        Choose your Menu<span className="dot-a">.</span>
         <span className="dot-b">.</span>
         <span className="dot-c">.</span>
       </h1>
-      <div className="category-btn-container">
-        <button className="category-btn category-btn-a">btn</button>
-        <button className="category-btn category-btn-b">btn</button>
-        <button className="category-btn category-btn-c">btn</button>
-        <button className="category-btn category-btn-d">btn</button>
+
+      <div className="category-btn-container btn">
+        {categories.map((category, index) => {
+          return (
+            <button
+              className="category-btn"
+              key={index}
+              onClick={() => filteredMenu(category)}
+            >
+              {category}
+            </button>
+          );
+        })}
       </div>
     </section>
   );

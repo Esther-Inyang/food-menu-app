@@ -14,26 +14,28 @@
   margin-bottom: 15px;
   color: #333333;
   text-transform: lowercase;
-  font-family: "Abyssinica SIL", serif;
+  font-style: italic;
+  font-family: "Roboto", sans-serif;
+  background-color: rgb(255, 238, 255);
 }
 
 .dot-a {
-  color: blue;
+  color: rgb(103, 103, 243);
 }
 
 .dot-b {
-  color: fuchsia;
+  color: rgb(239, 122, 239);
 }
 
 .dot-c {
-  color: green;
+  color: rgb(140, 241, 140);
 }
 
 .category-btn-container {
   width: fit-content;
   margin: 0 auto;
   display: grid;
-  background-color: white;
+  background-color: rgb(253, 253, 253);
   grid-template-columns: repeat(4, 1fr);
   gap: 10px;
   border-radius: 2px;
@@ -48,27 +50,15 @@
   transition: all 0.2s linear;
   cursor: pointer;
 }
-.category-btn-a,
-.category-btn-b,
-.category-btn-c,
-.category-btn-d {
-  color: rgb(3, 3, 93);
+
+.category-btn:nth-child(even) {
+  color: rgb(98, 4, 98);
+  background-color: rgb(221, 188, 253);
 }
 
-.category-btn-a {
-  background-color: rgb(253, 154, 253);
-}
-
-.category-btn-b {
+.category-btn:nth-child(odd) {
+  color: rgb(69, 3, 69);
   background-color: rgb(178, 253, 178);
-}
-
-.category-btn-c {
-  background-color: rgb(247, 204, 174);
-}
-
-.category-btn-d {
-  background-color: rgb(159, 159, 254);
 }
 
 .category-btn:hover {
@@ -77,12 +67,17 @@
 
 @media screen and (min-width: 768px) {
   .menu-category-title {
-    font-size: 1.6rem;
+    font-size: 2rem;
   }
 }
 
 @media screen and (min-width: 992px) {
+  .category-btn {
+    font-size: 1rem;
+    padding: 8px 10px;
+  }
+
   .menu-category-title {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
 }

@@ -118,6 +118,25 @@
   .food-img-container {
     height: 450px;
   }
+
+  .menu-title {
+    font-size: 2.5rem;
+    line-height: 0.5;
+    margin-top: 20px;
+  }
+
+  .menu-price {
+    font-size: 1.5rem;
+  }
+
+  .menu-desc {
+    font-size: 1.6rem;
+    line-height: 1.7;
+    margin-top: 20px;
+  }
+  .buy-btn {
+    font-size: 1.5rem;
+  }
 }
 
 @media screen and (min-width: 992px) {
@@ -211,5 +230,7 @@
   }
 
   .buy-btn {
+    font-size: 1rem;
+    margin-top: 15px;
   }
 }

@@ -23,7 +23,14 @@ export default function Menu({ menuItems }) {
                 </div>
                 <p className="menu-desc">{desc}</p>
                 <div className="buy-btn_container">
-                  <button className="buy-btn">buy</button>
+                  <button
+                    className="buy-btn"
+                    onClick={() => {
+                      alert(`Oops! ${title} is not Ready.`);
+                    }}
+                  >
+                    buy
+                  </button>
                 </div>
               </div>
             </div>

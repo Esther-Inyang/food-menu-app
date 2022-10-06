@@ -2,11 +2,32 @@ import React, { useState } from "react";
 import "./App.css";
 import Menu from "./components/Menu";
 import MenuCategories from "./components/MenuCategories";
-import menuItemsData from "./data";
+import data from "./data";
+
+const allCategories = [
+  "all",
+  ...new Set(
+    data.map((datum) => {
+      return datum.category;
+    })
+  ),
+];
 
 function App() {
-  const [menuItems, setMenuItems] = useState(menuItemsData);
-  const [categories, setCategories] = useState([]);
+  const [menuItems, setMenuItems] = useState(data);
+  const [categories, setCategories] = useState(allCategories);
+
+  const filteredMenu = (category) => {
+    if (category === "all") {
+      setMenuItems(data);
+      return;
+    }
+    const filterCat = data.filter((datum) => {
+      return datum.category === category;
+    });
+
+    setMenuItems(filterCat);
+  };
 
   return (
     <div className="app-container">
@@ -25,7 +46,7 @@ function App() {
         </h1>
       </div>
 
-      <MenuCategories />
+      <MenuCategories categories={categories} filteredMenu={filteredMenu} />
       <Menu menuItems={menuItems} />
     </div>
   );
