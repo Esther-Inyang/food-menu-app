@@ -77,8 +77,8 @@
 }
 
 .menu-desc {
-  font-size: 1.2rem;
-  line-height: 1.5;
+  font-size: 1rem;
+  line-height: 1.7;
   font-weight: 300;
   color: #696868;
   text-align: center;
@@ -126,14 +126,15 @@
   }
 
   .menu-price {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
 
   .menu-desc {
-    font-size: 1.6rem;
-    line-height: 1.7;
+    font-size: 1.4rem;
+    line-height: 1.8;
     margin-top: 20px;
   }
+
   .buy-btn {
     font-size: 1.5rem;
   }
